@@ -1,0 +1,32 @@
+{
+  "devtools_port": 9090,
+  "startup_app": {
+    "name": "OpenFin Notifications",
+    "description": "OpenFin Closing Events",
+    "url": "http://localhost:5050",
+    "uuid": "openfin-notifications-demo",
+    "autoShow": true,
+    "defaultWidth": 500,
+    "maxWidth": 1000,
+    "minWidth": 100,
+
+    "maxHeight": 900,
+    "defaultHeight": 500,
+    "minHeight": 100,
+
+    "defaultTop": 50,
+    "defaultLeft": 50,
+    "resizable": true,
+    "maximizable": true
+
+  },
+  "runtime": {
+    "arguments": "",
+    "version": "stable"
+  },
+  "shortcut": {
+    "company": "OpenFin",
+    "description": "OpenFin notifications Demo",
+    "name": "OpenFin notifications Demo"
+  }
+}
