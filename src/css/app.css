@@ -19,7 +19,7 @@ h5{
 }
 .btn-default, .btn-default:active, .btn-default:active, {
     background-color: #0095dd;
-    color: #7ffaff;
+    color: #212939;
     border:1px solid black;
 }
 .btn-default{
@@ -62,8 +62,8 @@ p.header{
     color: #ff0000;
 }
 .window{
-    background-color: #7ffaff;
-    color: #111111;
+    background-color: #212939;
+    color: #7ffaff;
 }
 #title-display{
     font-weight: 800;
@@ -71,4 +71,20 @@ p.header{
 }
 pre{
     font-size: 11px;
+}
+.closer{
+    float: right;
+    padding: 10px 0;
+}
+
+.closer:hover{
+    color: #ffffff;
+}
+
+#main{
+    padding: 12px 0;
+}
+
+#main:hover{
+    color: #ffffff;
 }
