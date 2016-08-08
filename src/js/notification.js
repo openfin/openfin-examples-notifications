@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
     init();
 });
 
-var _passedMessage = "no message set in the notification"
+var _passedMessage = "no message set in the notification";
 
 
 function onNotificationMessage(message){

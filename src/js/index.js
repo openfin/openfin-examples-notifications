@@ -78,6 +78,9 @@ function showNotification(message){
         onShow: function () {
             console.log("notification shown :", notification);
             notification.sendMessage("I will send the message '"+message+"'");
+            setTimeout(function(){
+                notification.sendMessage("I have been sent this message from the main app: I will send '"+message+"'");
+            },1000)
         }
     });
 }
