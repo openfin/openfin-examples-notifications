@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-
+// Uses a Try/Catch to find out if the code is running in Openfin
 
     try{
         fin.desktop.main(function(){
@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', function(){
             },function(){
                 console.log("Failed to get the version...");
             });
-
-
             document.querySelector('#b1').addEventListener('click', function(e){
                 e.preventDefault();
                 showNotification("Notification one message");
@@ -41,15 +39,11 @@ document.addEventListener('DOMContentLoaded', function(){
                 mutiNotes();
             });
 
-
-
-
         })
     }catch(err){
         alert("NO OPENFIN ");
     }
 });
-
 
 function showNotification(message){
     var _message = message || "no message passed";
@@ -91,7 +85,6 @@ function showCustomNotification(obj){
     var customNotification = new fin.desktop.Notification({
         url: "custom_notification.html",
         message: _obj,
-        customMessage:{msg:"hello I am the msg", other: "other stuff"},
         onClick: function () {
             console.log("clicked");
         },
@@ -121,14 +114,20 @@ function logOut(message){
     console.log("THIS IS THE MESSAGE == ", message)
     document.querySelector('#log').innerHTML = '<p>'+message+'</p>'
 }
+// Creates a
+function mutiNotes(count){
+    var _count;
+    if(!isNaN(count) || !count){
+        _count = 30;
+    }else{
+        _count = count;
+    }
 
-function mutiNotes(){
-
-    var _start = 60;
+    var _start = _count;
 
     var _int = setInterval(function(){
         if(_start > 0){
-            showCustomNotification({message: _start+" message " , link: "http://thomsonreuters.com/en.html"});
+            showCustomNotification({message: _start+" message " , link: "http://openfin.co"});
         }else{
            console.log("Finished");
             clearInterval(_int);
@@ -136,10 +135,6 @@ function mutiNotes(){
         _start--;
 
     }, 500);
-
-
-
-
 }
 
 
