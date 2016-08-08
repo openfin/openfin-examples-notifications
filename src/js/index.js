@@ -3,6 +3,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
     try{
         fin.desktop.main(function(){
+          fin.desktop.System.getVersion(function(v){
+                console.log("version == ", v );
+                document.querySelector("#version").innerHTML = "Runtime version: "+String(v);
+            },function(){
+                console.log("Failed to get the version...");
+            });
+
 
             document.querySelector('#b1').addEventListener('click', function(e){
                 e.preventDefault();
@@ -100,7 +107,7 @@ function showCustomNotification(obj){
             console.log("onMessage "+message)
         },
         onShow: function () {
-            console.log("notification shown :", notification);
+            console.log("notification shown :", customNotification);
             // notification.sendMessage("I will send the message '"+message+"'");
         }
     });
@@ -114,7 +121,7 @@ function logOut(message){
 
 function mutiNotes(){
 
-    var _start = 300;
+    var _start = 60;
 
     var _int = setInterval(function(){
         if(_start > 0){
