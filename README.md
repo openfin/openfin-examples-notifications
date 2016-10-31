@@ -57,8 +57,12 @@ To access the properties within the Notification itself a global JavaScript func
 Passing the argument to the constructor like this...
 
 ```javascript
-var _obj = {message:"link copy", link: "http://www.somelinkaddress.com"};
-'fin.desktop.Notification(_obj)'
+var _obj = {
+	message:"link copy",
+	link: "http://www.somelinkaddress.com"
+};
+
+fin.desktop.Notification(_obj);
 ```
 and adding the following javaScript code to the HTML of the Notification...
 
