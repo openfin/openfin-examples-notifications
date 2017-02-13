@@ -1,4 +1,4 @@
-z# OpenFin examples: Notifications
+# OpenFin examples: Notifications
 
 OpenFin allows native desktop notifications, the system-level windows which briefly appear as alerts at the bottom right of the screen, to be created and interacted with. 
 
