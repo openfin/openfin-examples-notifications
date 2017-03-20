@@ -2,22 +2,23 @@
 
 OpenFin allows native desktop notifications, the system-level windows which briefly appear as alerts at the bottom right of the screen, to be created and interacted with. 
 
-To run this example, clone the repository, run:
+To run this example you will need [Node.js](https://nodejs.org/en/download). Clone the repository, run:
 
 ```javascript
 $ npm install
 ```
-There is a simple Node/Express server which will need to run. Navigate to the root directory of the project and run:
+There is a simple Node/Express server which will run to host the app locally. Navigate to the root directory of the project and start the server by typing:
 
 ```javascript
 $ node server
 ```
-then launch from the command line with the [openfin-cli](https://www.npmjs.com/package/openfin-cli)
+then launch the app in OpenFin from the command line with the [openfin-cli](https://www.npmjs.com/package/openfin-cli)
 
 ```javascript
+$ npm install -g openfin-cli
 $ openfin --launch --url http://localhost:5050
 ```
-or click the link below to download the installer:
+or click the link below to download the installer (windows only):
 
 [Installer](https://dl.openfin.co/services/download?fileName=notificationOpenfin&config=http://localhost:5050/app.json)
 ## Create a new notification
