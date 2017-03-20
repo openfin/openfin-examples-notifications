@@ -12,11 +12,15 @@ There is a simple Node/Express server which will need to run. Navigate to the ro
 ```javascript
 $ node server
 ```
-then click the link below to download the installer:
+then launch from the command line with the [openfin-cli](https://www.npmjs.com/package/openfin-cli)
+
+```javascript
+$ openfin --launch --url http://localhost:5050
+```
+or click the link below to download the installer:
 
 [Installer](https://dl.openfin.co/services/download?fileName=notificationOpenfin&config=http://localhost:5050/app.json)
-
-##Create a new notification
+## Create a new notification
 A new Notification may be created as shown below:
 
 ```javascript
@@ -49,7 +53,7 @@ var notification = new fin.desktop.Notification({
 	}
 });
 ```
-##Setting initial state
+## Setting initial state
 Initial properties may be passed to the Notification window. They are sent via the 'message' property of the Object passed as an argument to the 'fin.desktop.Notification({})' constructor (see above). 
 
 To access the properties within the Notification itself a global JavaScript function named 'onNotificationMessage' must be available. It will receive the Object, as an argument, and from there you may set the state of the Notification, for example:
@@ -84,8 +88,8 @@ function onNotificationMessage(obj){
 
 will add a hyperlink to the Notification.
 
-##Communication between app and notification
-####App to Notification
+## Communication between app and notification
+#### App to Notification
 To send a message to the Notification from within the Application use:
 
 ```javascript
@@ -93,7 +97,7 @@ notificationInstance.sendMessage({value: "some value"});
 ```
  Inside the Notification a global 'onNotificationMessage' function is required (as per 'Setting initial state'). 
 
-####Notification to App
+#### Notification to App
 From within the Notification use:
 
 ```javascript
