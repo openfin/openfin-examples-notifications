@@ -22,9 +22,7 @@
   },
   "runtime": {
     "arguments": "",
-    "__version": "stable",
-    "__version": "6.49.12.23",
-    "version": "5.44.12.12"
+    "version": "stable"
   },
   "shortcut": {
     "company": "OpenFin",
