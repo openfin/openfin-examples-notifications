@@ -7,20 +7,12 @@ To run this example you will need [Node.js](https://nodejs.org/en/download). Clo
 ```javascript
 $ npm install
 ```
-There is a simple Node/Express server which will run to host the app locally. Navigate to the root directory of the project and start the server by typing:
+There is a simple Node/Express server which will run to host the app locally. The [openfin-launcher](https://www.npmjs.com/package/openfin-launcher) will then launch the application locally.
 
 ```javascript
-$ node server
+$ npm start
 ```
-then launch the app in OpenFin from the command line with the [openfin-cli](https://www.npmjs.com/package/openfin-cli)
 
-```javascript
-$ npm install -g openfin-cli
-$ openfin --launch --url http://localhost:5050
-```
-or click the link below to download the installer (windows only):
-
-[Installer](https://dl.openfin.co/services/download?fileName=notificationOpenfin&config=http://localhost:5050/app.json)
 ## Create a new notification
 A new Notification may be created as shown below:
 
